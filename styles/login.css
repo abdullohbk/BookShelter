@@ -1,0 +1,30 @@
+.body {
+  background-image: url(../assets/img/Login.jpg);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 300px;
+}
+
+form img {
+  width: 200px;
+}
+
+input {
+  width: 300px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin: 10px;
+
+}
+
+button {
+  width: 320px;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 5px 20px;
+}

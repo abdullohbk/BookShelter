@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css file -->
+    <link rel="stylesheet" href="./styles/output.css" />
+    <!------------ Main CSS ----------->
+    <link rel="stylesheet" href="./styles/main.css" />
+    <!------------- Icon Head ------------>
+    <link rel="icon" href="./assets/img/logo.png" />
+    <!------------ Link Bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>Book Shelter</title>
+  </head>
+  <body class="bg-gray-100">
+    <!--------------- Header Section ------------->
+    <header class="py-[30px]">
+      <div
+        class="container-fluid flex justify-between items-center border-b-2 pb-4"
+      >
+        <div class="flex gap-[50px] items-center">
+          <img src="./assets/img/logo.png" alt="logo" />
+          <div class="relative">
+            <i class="bi bi-search absolute left-4 top-2 text-gray-400"></i>
+            <input
+              type="search"
+              placeholder="Enter search text"
+              class="bg-gray-200 rounded-[20px] px-[45px] w-[670px] py-2"
+            />
+          </div>
+        </div>
+        <div class="flex items-center gap-5">
+          <i class="bi bi-brightness-high text-yellow-500 btn"></i>
+          <button class="bg-blue-500 px-4 py-2 text-white rounded-lg">
+            Log out
+          </button>
+        </div>
+      </div>
+
+      <div class="container-fluid py-[20px] border-b-2">
+        <div class="flex items-center justify-between">
+          <p class="ml-[500px]">Showing 18 Result(s)</p>
+          <div
+            class="flex items-center bg-gray-300 px-4 py-2 rounded-xl gap-2 text-white"
+          >
+            <i class="bi bi-clipboard"></i>
+            <p>Order by newest</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--------------- Header Section ------------->
+
+    <main class="relative">
+      <!--------------- Aside Section ------------>
+      <aside
+        class="container-fluid w-[300px] border-r-2 min-h-screen absolute top-[-30px] py-[30px] px-[20px]"
+      >
+        <h1 class="text-[24px] font-[400]">Bookmark</h1>
+        <p class="text-[14px] w-[218px] mt-[5px]">
+          If you don’t like to read, you haven’t found the right book
+        </p>
+      </aside>
+      <!--------------- Aside Section ------------>
+
+      <section id="cards">
+        <div class="container-fluid">
+          <div class="cards__wrapper flex flex-wrap gap-[80px] ml-[400px]">
+            <!--------- Dynamic Elements ---------->
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="./assets/js/utils.js"></script>
+  <script src="./assets/js/index.js"></script>
+</html>
